@@ -1,0 +1,51 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout1_1"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="540px"
+        android:layout_height="wrap_content"
+        android:text="Hold scroll wheel for 1.5 seconds to open the submenu"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        android:textStyle="bold"
+        android:layout_marginTop="120px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton1_1"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_marginBottom="32px"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/launcher_appdrawer"
+        app:layout_constraintBottom_toTopOf="@id/textView1_1"
+        app:layout_constraintEnd_toEndOf="@id/textView1_1"
+        app:layout_constraintStart_toStartOf="@id/textView1_1" />
+
+    <TextView
+        android:id="@+id/textView1_1"
+        android:layout_width="240px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90px"
+        android:text="OPEN ACTIVITY"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
